@@ -1,0 +1,42 @@
+{
+    "input": {
+        "testSuites": [
+            "./example/test1.json"
+        ]
+    },
+    "play": {},
+    "report": {
+        "type": "json",
+        "snapshot": 0
+    },
+    "webdriver": {
+        "configs": [
+            {
+                "serverUrl": "http://localhost:4444",
+                "type": "selenium",
+                "browsers": [
+                    {
+                        "active": true,
+                        "capability": {
+                            "browserName": "firefox"
+                        },
+                        "keepSessionAlive": false
+                    }
+                ]
+            },
+            {
+                "serverUrl": "http://localhost:4444",
+                "type": "selenium",
+                "browsers": [
+                    {
+                        "active": true,
+                        "capability": {
+                            "browserName": "firefox"
+                        },
+                        "keepSessionAlive": false
+                    }
+                ]
+            }
+        ]
+    }
+}

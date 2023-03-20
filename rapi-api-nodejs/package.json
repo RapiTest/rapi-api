@@ -1,0 +1,33 @@
+{
+  "name": "@rapi/api",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "description": "Rapi API for NodeJS provides user level api using rapi runner.",
+  "scripts": {
+    "example1": "node ./example/quickStart1.js",
+    "example2": "node ./example/quickStart2.js"
+  },
+  "author": "Rapi team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^18.8.4"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RapiTest/rapi-api.git"
+  },
+  "keywords": [
+    "Rapi",
+    "SideeX",
+    "Web",
+    "Test Automation",
+    "Selenium",
+    "WebDriver",
+    "Record",
+    "Playback"
+  ],
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
