@@ -1,4 +1,4 @@
-import { createRapi, Browser, ConfigBuilder } from "../src/index.js";
+import { createRapi, ConfigBuilder } from "../src/index.js";
 
 const config = new ConfigBuilder()
   .setTestSuites(["./example/test1.json"])

@@ -153,6 +153,7 @@ export class ConfigBuilder {
         },
       ],
     });
+    return this;
   }
 
   /**
@@ -178,6 +179,7 @@ export class ConfigBuilder {
         },
       ],
     });
+    return this;
   }
 
   build() {

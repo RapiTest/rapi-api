@@ -5,12 +5,10 @@ import {
   SnapshotStatus,
 } from "./configBuilder.js";
 import { createConfig } from "./config.js";
-import { Browser } from "./browsers.js";
 export {
   ConfigBuilder,
   createRapi,
   createConfig,
-  Browser,
   PlaybackType,
   SnapshotStatus,
 };
