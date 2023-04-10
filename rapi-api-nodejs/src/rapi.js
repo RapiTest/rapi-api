@@ -24,7 +24,7 @@ export class Rapi {
   run() {
     const service = new RapiProc(this.runnerPath);
     const data = service.run(this.#config);
-    console.error(data.stderr);
+    if (data.error) throw data.error;
     return this.#parseReport(data.stdout);
   }
 
