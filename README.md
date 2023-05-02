@@ -5,7 +5,7 @@
 ## Rapi config Document
 * Before using the Rapi API, you need to familiarize yourself with our Rapi runner config file schema. You can learn more about it [here]().
 ## Quick Start
-* For NodeJS
+* [For NodeJS](./rapi-api-nodejs/)
 ```javascript
 import { createRapi, Browser, ConfigBuilder } from "rapi-api";
 
