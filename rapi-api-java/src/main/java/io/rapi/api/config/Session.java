@@ -1,36 +1,14 @@
 package io.rapi.api.config;
 
+import lombok.*;
+
+@Builder(setterPrefix = "with")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
 public class Session {
+    @Builder.Default
     private String sessionId = "";
+    @Builder.Default
     private boolean keepSessionAlive = false;
-
-    /**
-     * @param keepSessionAlive Set true to keep the webdriver sessionId alive.
-     * @return
-     */
-    public void setKeepSessionAlive(boolean keepSessionAlive) {
-        this.keepSessionAlive = keepSessionAlive;
-    }
-
-    /**
-     * @param sessionId The existed session id on the webdriver.
-     * @return
-     */
-    public void setSessionId(String sessionId) {
-        this.sessionId = sessionId;
-    }
-
-    /**
-     * @return
-     */
-    public String getSessionId() {
-        return sessionId;
-    }
-
-    /**
-     * @return
-     */
-    public boolean getKeepSessionAlive() {
-        return keepSessionAlive;
-    }
 }

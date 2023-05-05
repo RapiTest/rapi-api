@@ -1,29 +1,24 @@
 # rapi-api-java
 ## Quick Start
 ```java
-Config config = new Config();
-ArrayList<String> testSuites = new ArrayList<>();
-testSuites.add("path/to/testSuites");
-config.getInput().setTestSuites(testSuites);
+                ArrayList<String> testSuites = new ArrayList<>();
+                testSuites.add("src/test/java/io/rapi/api/test1.json");
+                Input input = Input.builder().withTestSuites(testSuites).build();
 
-Browser browser = new Browser();
-Map<String, Object> caps = new HashMap<>();
-caps.put("browserName", "firefox");
-browser.setCapability(caps);
-ArrayList<Browser> browsers = new ArrayList<Browser>();
-browsers.add(browser);
-WebDriverConfig webDriverConfig = new WebDriverConfig();
-webDriverConfig.setBrowsers(browsers);
-webDriverConfig.setServerUrl("http://url.to.selenium.server");
-ArrayList<WebDriverConfig> webDriverConfigs = new ArrayList<WebDriverConfig>();
-webDriverConfigs.add(webDriverConfig);
+                Map<String, Object> caps = new HashMap<>();
+                caps.put("browserName", "firefox");
+                ArrayList<WebDriverCommonConfig> service = new ArrayList<WebDriverCommonConfig>();
+                service.add(
+                                WebDriverBrowserConfig.builder()
+                                                .withBrowsers(Browser.builder().withCapability(caps).build())
+                                                .withServerUrl("http://127.0.0.1:4444").build());
 
-config.getInput().setTestSuites(testSuites);
-config.getWebdriver().setConfigs(webDriverConfigs);
-
-Rapi rapi = new Rapi("path/to/rapi/runner", config);
-RapiReport report = rapi.run();
-System.out.println(report.getJson());
+                Config config = Config.builder().withInput(input)
+                                .withWebdriver(WebDriver.builder().withConfigs(service).build()).build();
+                System.out.println(config.toString());
+                Rapi rapi = new Rapi("../rapi-runner/rapi-runner-linux", config);
+                RapiReport report = rapi.run();
+                System.out.println(report.getJson());
 ```
 ## Documentation
 [Java]()
