@@ -13,7 +13,6 @@ import java.util.Map;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.rapi.api.config.Browser;
 import io.rapi.api.config.Config;
-import io.rapi.api.config.WebDriverConfig;
 
 public class Rapi {
     private Config config;
