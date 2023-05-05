@@ -1,0 +1,3 @@
+[submodule "rapi-runner"]
+	path = rapi-runner
+	url = https://github.com/RapiTest/rapi-runner/
