@@ -1,4 +1,4 @@
-package io.rapi.api.config;
+package io.github.rapitest.config;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

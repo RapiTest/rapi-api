@@ -1,18 +1,7 @@
-package io.rapi.api;
+package io.github.rapitest;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-import io.rapi.api.config.Browser;
-import io.rapi.api.config.Config;
+import io.github.rapitest.config.Config;
 
 public class Rapi {
     private Config config;

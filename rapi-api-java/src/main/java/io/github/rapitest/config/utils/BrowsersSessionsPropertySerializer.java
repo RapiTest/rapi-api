@@ -1,4 +1,4 @@
-package main.java.io.rapi.api.config.utils;
+package io.github.rapitest.config.utils;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;

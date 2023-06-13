@@ -9,7 +9,7 @@ AUTHOR_EMAIL = "rapitest.service@gmail.com"
 URL = "https://github.com/RapiTest/rapi-api"
 
 LICENSE = "MIT"
-VERSION = "1.0.0"
+VERSION = "4.0.0"
 DESCRIPTION = "Rapi API for Python provides user level api using rapi runner."
 LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding="utf8")
 LONG_DESC_TYPE = "text/markdown"

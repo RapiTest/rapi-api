@@ -1,4 +1,4 @@
-package io.rapi.api.config;
+package io.github.rapitest.config;
 
 import lombok.*;
 
@@ -6,9 +6,9 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-public class Period {
+public class Session {
     @Builder.Default
-    private int time = -1;
+    private String sessionId = "";
     @Builder.Default
-    private int maxNum = -1;
+    private boolean keepSessionAlive = false;
 }

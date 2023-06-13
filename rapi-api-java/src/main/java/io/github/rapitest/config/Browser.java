@@ -1,4 +1,4 @@
-package io.rapi.api.config;
+package io.github.rapitest.config;
 
 import java.util.Collections;
 import java.util.Map;

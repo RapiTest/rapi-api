@@ -1,4 +1,4 @@
-package io.rapi.api;
+package io.github.rapitest;
 
 import java.io.IOException;
 import java.io.InputStream;

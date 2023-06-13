@@ -1,7 +1,5 @@
-package main.java.io.rapi.api.config;
+package io.github.rapitest.config;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
