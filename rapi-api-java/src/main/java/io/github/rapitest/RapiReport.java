@@ -1,12 +1,8 @@
-package io.rapi.api;
+package io.github.rapitest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class RapiReport {
@@ -25,7 +21,7 @@ public class RapiReport {
         if (reportType == "all" || reportType == "json") {
             int start = input.indexOf(jsonStartToken) + jsonStartToken.length();
             int end = input.indexOf(jsonEndToken, start);
-            if (start != -1) {
+            if (start != -1 && end != -1) {
                 String jsonStr = input.substring(start, end);
                 ObjectMapper objectMapper = new ObjectMapper();
                 this.json = objectMapper.readTree(jsonStr.toString());
@@ -36,7 +32,7 @@ public class RapiReport {
         if (reportType == "all" || reportType == "html") {
             int start = input.indexOf(htmlStartToken) + htmlStartToken.length();
             int end = input.indexOf(htmlEndToken, start);
-            if (start != -1) {
+            if (start != -1 && end != -1) {
                 String htmlStr = input.substring(start, end);
                 this.html = htmlStr;
             } else {

@@ -1,10 +1,9 @@
-package io.rapi.api.config;
+package io.github.rapitest.config;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Map;
 import lombok.*;
-import main.java.io.rapi.api.config.WebDriverCommonConfig;
 
 @Builder(toBuilder = true, setterPrefix = "with")
 @NoArgsConstructor

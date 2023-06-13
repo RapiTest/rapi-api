@@ -1,10 +1,9 @@
-package main.java.io.rapi.api.config;
+package io.github.rapitest.config;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import io.rapi.api.config.Session;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-import main.java.io.rapi.api.config.utils.BrowsersSessionsPropertySerializer;
+import io.github.rapitest.config.utils.BrowsersSessionsPropertySerializer;
 
 @SuperBuilder(setterPrefix = "with")
 @NoArgsConstructor
